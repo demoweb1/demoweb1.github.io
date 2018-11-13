@@ -1158,3 +1158,7 @@ height:320px;
   height:100%;
 }
 
+a:hover {
+    color: #56bc8a !important;
+    text-decoration: none !important;
+}
