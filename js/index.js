@@ -20,6 +20,13 @@ $('#fullpage').fullpage({
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
+  easingcss3: 'cubic-bezier(.825,0,.5,1)',
+            parallax: true,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 100,
+                property: 'translate'
+            },
   controlArrows: false,
   anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
   menu: '#menu',
