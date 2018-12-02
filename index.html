@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Fullpage.js demo</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/Animate.css">
+     
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      
+   </head>
+   <body>
+      <header>
+         <div class="header-top clearfix">
+            <h1 class="l-left">
+               <img src="./images/twixt4.png" style="width:130px;height:130px"></a>
+            </h1>
+            <div class="l-right">
+               <a  class="signup-button" href="#firstSection" >Log in</a>
+               <a class="signup-button" href="#firstSection" role="button" tabindex="2">Sign up</a>
+            </div>
+         </div>
+         <nav class="hide">
+            <ul id="menu">
+               <li data-menuanchor="firstSection">
+                  <a href="#firstSection" title="First Section">First Section</a>
+               </li>
+               <li data-menuanchor="secondSection">
+                  <a href="#secondSection" title="Second Section">Second Section</a>
+               </li>
+               <li data-menuanchor="thirdSection">
+                  <a href="#thirdSection" title="Second Section">Third Section</a>
+               </li>
+               <li data-menuanchor="fourthSection">
+                  <a href="#fourthSection" title="Fourth Section">Fourth Section</a>
+               </li>
+               <li data-menuanchor="fifthSection">
+                  <a href="#fifthSection" title="First Slide">First Slide</a>
+               </li>
+               <li data-menuanchor="fifthSection/1">
+                  <a href="#fifthSection/1" title="Second Slide">Second Slide</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div id="fullpage">
+         <section class="vertical-scrolling"  style=" background-position: 50% 50%;background-size:cover; background-image:url(./images/pic3.jpg)">
+            <div class="animated fadeInLeft">
+            <h1 class="logo-word">Twixt</h1>
+            <h2 class="secondline">For tweens. By tweens.</h2>
+            <div id="login_form1" class="lf-block_right socials_email socials_email_login email-enabled" >
+            
+                            <form action="https://twixtme.ning.com/main/authorization/doSignIn?target=https%3A%2F%2Ftwixtme.ning.com%2F" method="post" novalidate="novalidate">
+                    <input type="hidden" name="xg_token" value=""><div class="lf-input__wrap login_email ">
+                        <input class="login_style" type="email" name="emailAddress" value="" placeholder="Email" data-ux="email-singin">                                            </div>
+
+                    <div class="lf-input__wrap ">
+                        <input class="login_style" type="password" name="password" value="" placeholder="Password" data-ux="password-singin">                                            </div>
+
+                                        <div class="lf-input__wrap mt20">
+                        
+                        <button id="login_form" type="submit" class="dy-button dy-button-login" data-track="{&quot;category&quot;:&quot;SignIn&quot;,&quot;action&quot;:&quot;ClickSubmitButton&quot;,&quot;label&quot;:&quot;&quot;}" data-ux="singin-button">Log in</button>
+
+                        <div class="forgot">
+                            <a href="https://twixtme.ning.com/main/authorization/requestPasswordReset?previousUrl=https%3A%2F%2Ftwixtme.ning.com%2Fmain%2Fauthorization%2FsignIn%3Ftarget%3Dhttps%253A%252F%252Ftwixtme.ning.com%252F" data-ux="forgot-password-singin">Forgot your password?</a>
+                        </div>
+                    </div>
+                </form>
+            
+                            <div class="signUp_signIn__link">
+                    New? <button class="button1" >Click here to join</button>                </div>
+                    </div></div>
+
+                      <div class="sign_form" id="popupLogin">
+    
+    <div class="lf-block">
+          <div class="lf-block_right block_email socials_email" id="block_email" >
+                                
+                <form class="form1" action="https://twixtme.ning.com/main/authorization/doSignUp?target=https%3A%2F%2Ftwixtme.ning.com%2F" method="post">
+                    <input type="hidden" name="t" value="6maIfS0ViyfD4VLqtV5rmw==,LEubV/7h1EtKJY45fgEcqqEyIgHnue8UmTjPRVfQJTt6x9Fl9h7i1yyMHQ6MA3gh">
+
+                    <div class="lf-input__wrap ">
+                        <input class="login_style" type="email" name="emailAddress" value="" id="signup_email" placeholder="youremail@mail.com" maxlength="320" data-ux="signup-email">                                                                    </div>
+
+                    
+                    <div class="lf-input__wrap ">
+                        <input class="login_style" type="password" name="password" value="" id="signup_password" placeholder="Password" maxlength="64" data-ux="signup-password">                                            
+                                        
+                    <div class="lf-input__wrap">
+                        <input id="sign_up_button" type="submit" class="dy-button" value="Create account" data-track="{&quot;category&quot;:&quot;SignUp&quot;,&quot;action&quot;:&quot;ClickSubmitButton&quot;,&quot;label&quot;:&quot;&quot;}" data-ux="submit-button">
+                    </div>
+                </form>
+                                    <div class="signUp_signIn__link">
+                        Already a member? <button class="button1">Sign in</button>                    </div>
+                                </div>
+            </div>
+    <div class="shadow"></div>
+</div>
+
+
+  
+    
+
+
+         </section>
+         <section class="vertical-scrolling">
+            <div class="section-wrapper">
+                <img  src="./images/tumblr.gif" style="width:200px;height:400px;">
+               <div class="section-content">
+
+                  <h1 class="section-title">Are you ready to Twixt?</h1>
+                  <p>We think tweens are special. And talented. And should have their own space. So we created Twixt. The first tween-ager space.</p>
+               </div>
+            </div>
+         </section>
+         <section  id="blog" class="vertical-scrolling">
+            <div class="section-blog-wrapper">
+               <div class="section-blog-content">
+                  <h1 class="section-blog-title">Twixt. For you.</h1>
+                  <p>We know you’re cool. And different. Too old for choo-choo trains and silly cartoons.  
+                     But those gross teenagers’ videos? Eeeeewwwww! Wish you had someplace to call your own? 
+                     Friends you want and things you can talk about. 
+                     Projects you care about and community you can connect with. <br>
+                     Express yourself! On Twixt! 
+                  </p>
+               </div>
+             
+               <div class="animated fadeInRight">  
+              <div class="row row-flex">
+  <div class="col-sm-3">
+    <div class="card">
+     <div class="card-header">
+        <div class="ui-avatar" style="background-image:url(https://66.media.tumblr.com/avatar_3312108f4669_48.pnj)"></div>
+                           <a class="ui-username" href="http://bevsi.tumblr.com/post/178638962296/inktober-day-1" target="_blank">bevsi</a>
+     </div>
+      
+        <img  id="vert_img" class="card-img" src="https://storage.ning.com/topology/rest/1.0/file/get/134055307?profile=original" alt="">
+     
+      <div class="card-footer">
+         <div class="ui-notes">17,350 notes</div>
+                           <div class="post_controls">
+                              <div class="post_controls_inner">
+                                 <div class="post_control post-control-icon share"></div>
+                                 <div class="post_control post-control-icon reblog"></div>
+                                 <div class="post_control post-control-icon like"></div>
+                              </div>
+                           </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="card">
+      <div class="card-header">
+         <div class="ui-avatar" style="background-image:url(https://66.media.tumblr.com/avatar_93e72bf5b54a_48.pnj)"></div>
+                           <a class="ui-username" href="http://cherriielle.tumblr.com/post/178649170360/the-cure" target="_blank">cherriielle</a>
+      </div>
+    
+        <img  id="vert_img" class="card-img"  src="https://storage.ning.com/topology/rest/1.0/file/get/134055241?profile=original" alt="">
+     
+       <div class="card-footer">
+          <div class="ui-notes">10,296 notes</div>
+                           <div class="post_controls">
+                              <div class="post_controls_inner">
+                                 <div class="post_control post-control-icon share"></div>
+                                 <div class="post_control post-control-icon reblog"></div>
+                                 <div class="post_control post-control-icon like"></div>
+                              </div>
+                           </div>
+       </div>
+    </div>
+  </div>
+
+   <div class="col-sm-3">
+    <div class="card">
+     <div class="card-header">
+        <div class="ui-avatar" style="background-image:url(https://66.media.tumblr.com/avatar_93e72bf5b54a_48.pnj)"></div>
+                           <a class="ui-username" href="http://aquanutart.tumblr.com/post/178618190557/my-full-piece-for-the-bnhaauzine-this-zine-is" target="_blank">aquanutart</a>
+     </div>
+      
+        <img  id="vert_img" class="card-img" src="https://storage.ning.com/topology/rest/1.0/file/get/134055283?profile=original" alt="">
+     
+      <div class="card-footer">
+         <div class="ui-notes">17,350 notes</div>
+                           <div class="post_controls">
+                              <div class="post_controls_inner">
+                                 <div class="post_control post-control-icon share"></div>
+                                 <div class="post_control post-control-icon reblog"></div>
+                                 <div class="post_control post-control-icon like"></div>
+                              </div>
+                           </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+  </div>    
+
+                 
+                  
+         </section>
+         <section class="vertical-scrolling">
+            <div class="row">
+            <div  id="fourth-left" class="col-3 ">
+              <img class="img-responsive" src="https://storage.ning.com/topology/rest/1.0/file/get/134055309?profile=original">
+
+            </div>
+            <div id="fourth-right" class="col-4">
+           
+             <h1 class="section-dashboard-title">Twixt. For those who care about you!</h1>
+                     <br><br><br>
+                     <p id="para">You know them. The ones who won’t let you lock the door. Or leave the room when your friends are around!
+                        And yeah, sometimes let you use their phone. Yes! That’s you, parents! Twixt is for you, too.
+                        Watch as your kids Discover new talents and become leaders, artists, sports commentators, poets, bloggers. 
+                        Bring up confident kids who thrive in a social world. Give them the tools to start speaking their mind in a 
+                        community of peers. 
+                        Known to you. Vetted by you.</p>
+            </div>
+            <div id="fourth-right" class="col-3 ">
+              <img class="img-responsive" src="./images/fourth.png">
+              
+            </div>
+            
+            </div>
+           
+           
+         </section>
+         <section class="vertical-scrolling">
+            <div class="section-wrapper"><div class="create-graphic">
+            <div class="post-icon text-icon">A
+            <span class="icon-label">Create</span></div>
+            <div class="post-icon photo-icon"><i class="fa fa-camera" aria-hidden="true"></i>
+<span class="icon-label">Post</span></div>
+            <div class="post-icon quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i>
+<span class="icon-label">Discover</span></div>
+            <div class="post-icon link-icon">
+            <i class="fa fa-link" aria-hidden="true"></i><span class="icon-label">Comment</span></div>
+            
+            <div class="section-content1"><h1 class="section-title1">Twixt away!</h1><p>Find the newest videos, books and DIY trends. Build your own following for music, art, writing. Display your creativity on our unique Shelf. Discover local events. Drive local community projects and fundraisers. And even form school groups for homework!</p></div></div>
+         </section>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+      <script  src="js/index.js"></script>
+      <script  src="js/jquery.fullPage.min.js"></script>
+      
+              <script>
+               $(function(){
+  new WOW().init(); 
+});
+              </script>
+
+      <script>
+      $('.sign_form').hide();
+$('.signUp_signIn__link').on('click',
+  function() {
+   
+     $('#login_form1, .sign_form').toggle(200);
+     }
+);
+$('.l-right').hide();
+  
+      </script>
+   </body>
+</html>
